@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       <div className="flex gap-2 p-2">
         <button>Sign In</button>
-        <button className="bg-black text-white px-2 py-1 rounded">Get Started</button>
+        <button className="bg-black text-white px-2 py-1 rounded font-medium">Get Started</button>
       </div>
     </div>
   );
