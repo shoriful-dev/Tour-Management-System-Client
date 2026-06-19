@@ -18,12 +18,12 @@ import {
 } from '@/components/ui/form';
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 import { cn } from '@/lib/utils';
-import { useSendOtpMutation, useVerifyOtpMutation } from '@/redux/features/auth/auth.api';
+// import { useSendOtpMutation, useVerifyOtpMutation } from '@/redux/features/auth/auth.api';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Dot } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useLocation, useNavigate } from 'react-router';
+import { useLocation } from 'react-router';
 import { toast } from 'sonner';
 import z from 'zod';
 
@@ -35,7 +35,7 @@ const FormSchema = z.object({
 
 export default function Verify() {
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [email] = useState(location.state);
   const [confirmed, setConfirmed] = useState(false);
   const [sendOtp] = useSendOtpMutation();
