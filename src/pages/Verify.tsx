@@ -18,7 +18,7 @@ import {
 } from '@/components/ui/form';
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
 import { cn } from '@/lib/utils';
-// import { useSendOtpMutation, useVerifyOtpMutation } from '@/redux/features/auth/auth.api';
+import { useSendOtpMutation, useVerifyOtpMutation } from '@/redux/features/auth/auth.api';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Dot } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -35,11 +35,11 @@ const FormSchema = z.object({
 
 export default function Verify() {
   const location = useLocation();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [email] = useState(location.state);
   const [confirmed, setConfirmed] = useState(false);
-  // const [sendOtp] = useSendOtpMutation();
-  // const [verifyOtp] = useVerifyOtpMutation();
+  const [sendOtp] = useSendOtpMutation();
+  const [verifyOtp] = useVerifyOtpMutation();
   const [timer, setTimer] = useState(5);
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -84,11 +84,11 @@ export default function Verify() {
   };
 
   //! Needed - Turned off for development
-  //   useEffect(() => {
-  //     if (!email) {
-  //       navigate("/");
-  //     }
-  //   }, [email]);
+    useEffect(() => {
+      if (!email) {
+        navigate("/");
+      }
+    }, [email]);
 
   useEffect(() => {
     if (!email || !confirmed) {
@@ -182,7 +182,7 @@ export default function Verify() {
             </CardDescription>
           </CardHeader>
           <CardFooter className="flex justify-end">
-            <Button onClick={handleSendOtp} className="w-[300px]">
+            <Button onClick={handleSendOtp} className="w-75">
               Confirm
             </Button>
           </CardFooter>
