@@ -100,4 +100,4 @@ export function LoginForm({ className, ...props }: React.HTMLAttributes<HTMLDivE
       </div>
     </div>
   );
-}
+};
