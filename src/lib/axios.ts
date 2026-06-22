@@ -6,7 +6,7 @@ export const axiosInstance = axios.create({
   withCredentials: true,
 });
 
-// Add a request interceptor
+// Add a request interceptors
 axiosInstance.interceptors.request.use(
   function (config) {
     console.log('Axios', config);
