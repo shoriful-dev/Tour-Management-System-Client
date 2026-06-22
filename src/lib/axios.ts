@@ -17,7 +17,7 @@ axiosInstance.interceptors.request.use(
   },
 );
 
-// Add a response interceptor
+// Add a response interceptors
 axiosInstance.interceptors.response.use(
   function onFulfilled(response) {
     console.log('Axios', response);
