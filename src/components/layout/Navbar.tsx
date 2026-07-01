@@ -94,10 +94,16 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-2">
           <ModeToggle />
-          {data?.data?.email && <Button variant={'outline'} className={'text-sm'}>Logout</Button>}
-          <Button asChild className="text-sm">
-            <Link to={'/login'}>Login</Link>
-          </Button>
+          {data?.data?.email && (
+            <Button variant={'outline'} className={'text-sm'}>
+              Logout
+            </Button>
+          )}
+          {!data?.data?.email && (
+            <Button asChild className="text-sm">
+              <Link to={'/login'}>Login</Link>
+            </Button>
+          )}
         </div>
       </div>
     </header>
