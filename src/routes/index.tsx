@@ -1,4 +1,5 @@
 import App from '@/App';
+import DashboardLayout from '@/components/layout/DashboardLayout';
 import About from '@/pages/About';
 import Login from '@/pages/Login';
 import Register from '@/pages/Register';
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
         path: 'about',
       },
     ],
+  },
+  {
+    Component: DashboardLayout,
+    path: '/admin',
   },
   {
     Component: Login,
