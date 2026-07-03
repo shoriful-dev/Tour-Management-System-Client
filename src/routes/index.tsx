@@ -1,6 +1,7 @@
 import App from '@/App';
 import DashboardLayout from '@/components/layout/DashboardLayout';
 import About from '@/pages/About';
+import Analytics from '@/pages/Admin/Analytics';
 import Login from '@/pages/Login';
 import Register from '@/pages/Register';
 import Verify from '@/pages/Verify';
@@ -20,6 +21,12 @@ export const router = createBrowserRouter([
   {
     Component: DashboardLayout,
     path: '/admin',
+    children: [
+      {
+        Component: Analytics,
+        path: 'analytics',
+      },
+    ],
   },
   {
     Component: Login,
