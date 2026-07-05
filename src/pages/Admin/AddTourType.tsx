@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -25,7 +24,7 @@ export default function AddTourType() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[100px]">Name</TableHead>
+              <TableHead className="w-25">Name</TableHead>
               <TableHead className="text-right">Action</TableHead>
             </TableRow>
           </TableHeader>
