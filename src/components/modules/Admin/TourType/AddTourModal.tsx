@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -39,7 +38,7 @@ export function AddTourTypeModal() {
         <DialogTrigger asChild>
           <Button>Add Tour Type</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-106.25">
           <DialogHeader>
             <DialogTitle>Add Tour Type</DialogTitle>
           </DialogHeader>
