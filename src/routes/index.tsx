@@ -1,12 +1,16 @@
 import App from '@/App';
 import DashboardLayout from '@/components/layout/DashboardLayout';
+import { role } from '@/constants/role';
 import About from '@/pages/About';
 import Analytics from '@/pages/Admin/Analytics';
 import Login from '@/pages/Login';
 import Register from '@/pages/Register';
 import Verify from '@/pages/Verify';
+import type { TRole } from '@/types';
+import { generateRoutes } from '@/utils/generateRoutes';
 import { withAuth } from '@/utils/withAuth';
-import { createBrowserRouter } from 'react-router';
+import { createBrowserRouter, Navigate } from 'react-router';
+import { userSidebarItems } from './userSidebarItems';
 
 export const router = createBrowserRouter([
   {
