@@ -4,4 +4,4 @@ export default function AddTour() {
       <h1> This is AddTour component </h1>
     </div>
   );
-}
+};
