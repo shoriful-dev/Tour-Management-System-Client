@@ -36,4 +36,4 @@ export default function Password({ ...field }) {
       </div>
     </div>
   );
-}
+};
