@@ -5,7 +5,7 @@ export interface ISendOtp {
 export interface IVerifyOtp {
   email: string;
   otp: string;
-}
+};
 
 export interface ILogin {
   email: string;
