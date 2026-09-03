@@ -10,4 +10,4 @@ export interface IVerifyOtp {
 export interface ILogin {
   email: string;
   password: string;
-}
+};
