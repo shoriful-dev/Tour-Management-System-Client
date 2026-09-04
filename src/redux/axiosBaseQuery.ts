@@ -32,7 +32,7 @@ const axiosBaseQuery =
           data: err.response?.data || err.message,
         },
       };
-    }
+    };
   };
 
 export default axiosBaseQuery;
