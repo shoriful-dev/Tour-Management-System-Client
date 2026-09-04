@@ -49,4 +49,4 @@ export function ThemeProvider({
       {children}
     </ThemeProviderContext.Provider>
   );
-}
+};
