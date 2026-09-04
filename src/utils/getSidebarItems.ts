@@ -13,5 +13,5 @@ export const getSidebarItems = (userRole: TRole) => {
       return [...userSidebarItems];
     default:
       return [];
-  }
+  };
 };
