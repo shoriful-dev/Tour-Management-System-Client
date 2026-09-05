@@ -14,6 +14,6 @@ const CommonLayout = ({children}: IProps) => {
       <Footer />
     </div>
   );
-}
+};
 
 export default CommonLayout;
