@@ -72,4 +72,4 @@ export function AddTourTypeModal() {
       </form>
     </Dialog>
   );
-}
+};
