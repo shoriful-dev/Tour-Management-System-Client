@@ -165,4 +165,4 @@ export function RegisterForm({ className, ...props }: React.HTMLAttributes<HTMLD
       </div>
     </div>
   );
-}
+};
