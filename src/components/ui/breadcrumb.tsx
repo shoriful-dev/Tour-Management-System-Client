@@ -13,7 +13,7 @@ function Breadcrumb({ className, ...props }: React.ComponentProps<"nav">) {
       {...props}
     />
   )
-}
+};
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
   return (
