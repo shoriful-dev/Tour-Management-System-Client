@@ -4,4 +4,4 @@ export default function Analytics() {
       <h1> This is Analytics component </h1>
     </div>
   );
-}
+};
