@@ -7,4 +7,4 @@ export default function Unauthorized() {
       <Link to="/">Home</Link>
     </div>
   );
-}
+};
