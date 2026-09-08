@@ -4,4 +4,4 @@ export default function Bookings() {
       <h1> This is Bookings component </h1>
     </div>
   );
-}
+};
