@@ -44,4 +44,4 @@ export default function AddTourType() {
       </div>
     </div>
   );
-}
+};
