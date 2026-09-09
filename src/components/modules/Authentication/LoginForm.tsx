@@ -30,7 +30,7 @@ export function LoginForm({ className, ...props }: React.HTMLAttributes<HTMLDivE
         toast.error('Your account is not verified');
         navigate('/verify', { state: data.email });
       };
-    }
+    };
   };
 
   return (
