@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 interface IProps {
   children: ReactNode;
-}
+};
 
 const CommonLayout = ({children}: IProps) => {
   return (
