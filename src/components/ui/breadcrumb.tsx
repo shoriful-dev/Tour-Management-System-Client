@@ -87,7 +87,7 @@ function BreadcrumbSeparator({
       )}
     </li>
   )
-}
+};
 
 function BreadcrumbEllipsis({
   className,
