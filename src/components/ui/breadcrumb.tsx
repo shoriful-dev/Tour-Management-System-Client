@@ -109,7 +109,7 @@ function BreadcrumbEllipsis({
       <span className="sr-only">More</span>
     </span>
   )
-}
+};
 
 export {
   Breadcrumb,
